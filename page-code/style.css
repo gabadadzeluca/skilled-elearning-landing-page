@@ -1,16 +1,27 @@
-@import url(https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
 
 :root{
     --dark-orange:#FF6F48;
     --light-orange:#FF9B62;
-    --dark-blue:#162542;
+    --dark-blue: #13183F;;
     --dark-grey:#7B8BAD;
     --light-grey:#E8EFF2;
     --white:#FFFFFF;
 }
 
+.normal{
+    font-weight: 500;
+}
+
+.semi-bold{
+    font-weight: 700;
+}
+.bold{
+    font-weight: 800;
+}
+
 body{
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;;
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
 }
 
@@ -32,17 +43,46 @@ body{
     color: var(--white);
 }
 
+.icon{
+    width: 3.5rem;
+    z-index: 1;
+    margin-bottom: calc(-3.5rem/2);
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+}
+
 .box div{
     background-color: var(--white);
 }
+
 .box:not(h4){
     font-size: 1rem;
+}
+
+h4{
+    font-size: 1.25rem;
 }
 
 p:not(.description){
     color: #F74780;
 }
 
+.buttons{
+    width: 8.75rem;
+    height: 3rem;
+    background: var(--dark-blue);
+    color: var(--white);
+    font-size: 1rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    border-radius: 1.75rem;
+}
+
+.grad-button{
+    font-size: 1rem;
+}
 
 
 @media screen and (max-width:450px){
@@ -51,5 +91,5 @@ p:not(.description){
     }
 
 
-    
+
 }
