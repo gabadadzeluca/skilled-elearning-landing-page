@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&display=swap);
+
+:root{
+    --dark-orange:#FF6F48;
+    --light-orange:#FF9B62;
+    --dark-blue:#162542;
+    --dark-grey:#7B8BAD;
+    --light-grey:#E8EFF2;
+    --white:#FFFFFF;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+}
+
+
+.grad-button{
+    width: 10.4rem;
+    height: 3.5rem;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    color: var(--white);
+    border-radius: 1.9rem;
+}
+
+.course-box{
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    min-height: 7.5rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--white);
+}
+
+.box div{
+    background-color: var(--white);
+}
+.box:not(h4){
+    font-size: 1rem;
+}
+
+p:not(.description){
+    color: #F74780;
+}
+
+
+
+@media screen and (max-width:450px){
+    #tablet-img, #desktop-img{
+        display: none;
+    }
+
+
+    
+}
