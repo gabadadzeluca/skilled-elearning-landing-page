@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+
+:root{
+    --light-blue: #666CA3;
+    --dark-blue: #13183F;
+    --gray: #83869A;
+    --dark-pink: #f74780;
+    --pink: #FFA7C3;
+    --white: #FFFFFF;
+    --orange-grad: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
+    --purple-grad: linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%);
+
+    --very-bold: 800;
+    --bold: 700;
+    --normal: 500;
+
+}
+/* temporary */
+#tablet-img, #desktop-img{
+    display: none;
+}
+/* temporary */
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    margin: 0 auto;
+}
+
+
+
+header{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 3rem;
+}
+header p{
+    font-weight: var(--very-bold);
+    font-size: 1.75rem;
+}
+
+header button{
+    font-weight: var(--bold);
+    font-size: 1rem;
+    color: var(--white);
+    background: var(--dark-blue);
+    border-radius: 1.75rem;
+
+    min-width: 8.75rem;
+    min-height: 3rem;
+}
+
+footer{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    background: var(--dark-blue);
+    min-height: 7.5rem;
+    align-items: center;
+
+}
+
+footer p{
+    color: var(--white);
+    font-weight: var(--very-bold);
+}
+
+.title{
+    font-weight: var(--very-bold);
+    font-size: 2.5rem;
+}
+
+.first-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.first-box p{
+    color: var(--gray);
+    font-weight: var(--normal);
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+
+.box{
+    width: 100%;
+}
+
+.box h4{
+    font-weight: var(--very-bold);
+    font-size: 1.25rem;
+}
+
+.box p{
+    font-weight: var(--normal);
+    font-size: 1rem;
+    color: var(--gray);
+}
+
+.box a{
+    color: var(--dark-pink);
+    font-weight: var(--bold);
+    font-size: 1.125rem;
+}
+
+.box div{
+    background: var(--white);
+    padding-top: 1rem;
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.square-text{
+    width: 100%;
+    background: var(--orange-grad);
+    min-height: 7.5rem;
+    border-radius: 0.625rem;
+    display: block;
+    font-weight: var(--very-bold);
+    color: var(--white);
+    line-height: 2rem;
+    font-size: 1.5rem;
+    padding: 1rem 1.6rem;
+
+    margin-bottom: 2rem;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.content img{
+    z-index: 1;
+    margin-bottom: -28px;
+}
+
+#mobile-img{
+    width: 100%;
+}
+
+@media screen and (max-width:450px){
+    #tablet-img, #desktop-img{
+        display: none;
+    }
+}
