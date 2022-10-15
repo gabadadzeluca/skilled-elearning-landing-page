@@ -38,8 +38,10 @@ header{
     min-height: 3rem;
 }
 header p{
+    color: var(--dark-blue);
     font-weight: var(--very-bold);
     font-size: 1.75rem;
+    margin-left: 1rem;
 }
 
 header button{
@@ -48,7 +50,7 @@ header button{
     color: var(--white);
     background: var(--dark-blue);
     border-radius: 1.75rem;
-
+    margin-right: 1rem;
     min-width: 8.75rem;
     min-height: 3rem;
 }
@@ -60,17 +62,36 @@ footer{
     background: var(--dark-blue);
     min-height: 7.5rem;
     align-items: center;
+}
+
+footer button{
+    font-weight: var(--bold);
+    font-size: 1rem;
+    color: var(--white);
+    background: var(--purple-grad);
+    border-radius: 1.75rem;
+    min-width: 8.75rem;
+    min-height: 3rem;
+    margin-right: 1rem;
 
 }
 
 footer p{
     color: var(--white);
     font-weight: var(--very-bold);
+    font-size: 1.75rem;
+    margin-left: 1rem;
+
 }
 
 .title{
     font-weight: var(--very-bold);
     font-size: 2.5rem;
+}
+
+
+.container{
+    padding: 0 1.8125rem 2rem 1.75rem;
 }
 
 .first-box{
@@ -86,9 +107,25 @@ footer p{
     font-size: 1rem;
     line-height: 1.625rem;
 }
+.first-box button{
+    min-width: 10.5rem;
+    min-height: 3.5rem;
+    border-radius: 2rem;
+
+    color: var(--white);
+    background: var(--orange-grad);
+    font-weight: var(--bold);
+    font-size: 1rem;
+}
 
 .box{
     width: 100%;
+    margin: 0 1rem;
+}
+
+.box a{
+    padding-bottom: 2rem;
+    padding-top: 1rem;
 }
 
 .box h4{
@@ -109,6 +146,7 @@ footer p{
 }
 
 .box div{
+    padding: 1.75rem;
     background: var(--white);
     padding-top: 1rem;
     border-radius: 0.625rem;
@@ -123,15 +161,16 @@ footer p{
     background: var(--orange-grad);
     min-height: 7.5rem;
     border-radius: 0.625rem;
-    display: block;
+    display: flex;
+    align-items: center;
     font-weight: var(--very-bold);
     color: var(--white);
     line-height: 2rem;
     font-size: 1.5rem;
     padding: 1rem 1.6rem;
-
-    margin-bottom: 2rem;
+    margin: 0 1rem 2rem 1rem;
 }
+
 
 .content {
     display: flex;
@@ -140,10 +179,15 @@ footer p{
 .content img{
     z-index: 1;
     margin-bottom: -28px;
+    margin-left: 1.75rem;
 }
 
 #mobile-img{
     width: 100%;
+}
+
+button{
+    border: 0;
 }
 
 @media screen and (max-width:450px){
