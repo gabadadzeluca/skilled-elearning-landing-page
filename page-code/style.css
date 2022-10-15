@@ -16,11 +16,7 @@
     --normal: 500;
 
 }
-/* temporary */
-#tablet-img, #desktop-img{
-    display: none;
-}
-/* temporary */
+
 body{
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 1rem;
@@ -167,8 +163,10 @@ footer p{
     color: var(--white);
     line-height: 2rem;
     font-size: 1.5rem;
-    padding: 1rem 1.6rem;
     margin: 0 1rem 2rem 1rem;
+}
+.square-text p{
+    padding: 1rem 1.6rem;
 }
 
 
@@ -190,8 +188,58 @@ button{
     border: 0;
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:745px){
     #tablet-img, #desktop-img{
         display: none;
+    }
+    .box, .square-text{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:745px){
+    #mobile-img, #desktop-img{
+        display: none;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    #tablet-img{
+        z-index: -1;
+        display: inline-block;
+        position: absolute;
+        top: -130px;;
+        right: -290px;
+        object-fit: contain;
+
+    }
+    
+    .first-box{
+        max-width: 398px;
+    }
+
+
+    .courses{
+        flex-wrap: wrap;
+        margin-top: 10rem;
+    }
+
+    .box, .square-text{
+        width: 21.25rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .courses{
+        flex-wrap: wrap;
+    }
+
+    .box, .square-text{
+        width: 30%;
+    }
+    body{
+        overflow-x: hidden;
     }
 }
