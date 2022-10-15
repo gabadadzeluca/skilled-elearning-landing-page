@@ -50,6 +50,10 @@ header button{
     min-width: 8.75rem;
     min-height: 3rem;
 }
+header button:hover{
+    background: var(--light-blue);
+    cursor: pointer;
+}
 
 footer{
     width: 100%;
@@ -70,6 +74,11 @@ footer button{
     min-height: 3rem;
     margin-right: 1rem;
 
+}
+
+footer button:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    cursor: pointer;
 }
 
 footer p{
@@ -112,6 +121,11 @@ footer p{
     background: var(--orange-grad);
     font-weight: var(--bold);
     font-size: 1rem;
+}
+
+.first-box button:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    cursor: pointer;
 }
 
 .box{
@@ -210,14 +224,12 @@ button{
         z-index: -1;
         display: inline-block;
         position: absolute;
-        top: -130px;;
-        right: -290px;
-        object-fit: contain;
-
+        top: -8.125rem;;
+        right: -18.125rem;
     }
     
     .first-box{
-        max-width: 398px;
+        max-width: 24.875rem;
     }
 
 
@@ -229,17 +241,97 @@ button{
     .box, .square-text{
         width: 21.25rem;
     }
-}
 
-@media screen and (min-width: 900px) {
-    .courses{
-        flex-wrap: wrap;
+    .square-text{
+        margin-top: 2rem;
     }
 
-    .box, .square-text{
-        width: 30%;
+    .square-text{
+        align-items: flex-start;
+        font-size: 1.5rem;
+    }
+    /* write margins for everything*/
+    header p, header button, .first-box ,.courses, footer p, footer button{
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #mobile-img, #tablet-img{
+        display: none;
     }
     body{
         overflow-x: hidden;
+    }
+    #desktop-img{
+        z-index: -1;
+        display: inline-block;
+        position: absolute;
+        top: -10rem;;
+        right: -20rem;
+        
+    }
+    .courses{
+        flex-wrap: wrap;
+        margin-top: 20rem;
+        margin-left: 10rem;
+        margin-bottom: 8.75rem;
+    }
+
+    .box, .square-text{
+        width: 21.875rem;
+        height: 20.125rem;
+    }
+    .square-text{
+        align-items: flex-start;
+        font-size: 1.5rem;
+    }
+
+
+    /* write margins for everything*/
+    header p, header button, .first-box ,.courses, footer p, footer button{
+        margin-left: 11rem;
+        margin-right: 11rem;
+    }
+
+    /* write sizes for everything*/
+    header p {
+        font-size: 2rem;
+    }
+    header button{
+        font-size: 1.125rem;
+    }
+    .title{
+        font-size: 3.5rem;
+    }
+    .first-box p{
+        font-size: 1.125rem;
+    }
+    .first-box button{
+        width: 6.5rem;
+        height: 1.75rem;
+        font-size: 1.125rem;
+    }
+    .square-text p{
+        font-size: 2rem;
+        width: 17.875rem;
+        height: 7.5rem;
+    }
+    .box h4{
+        font-size: 1.5rem;
+    }
+    .box p{
+        font-size: 1.125rem;
+    }
+    .box a{
+        font-size: 1.125rem;
+    }
+
+    footer p{
+        font-size: 2rem;
+    }
+    footer button{
+        font-size: 1.125rem;
     }
 }
