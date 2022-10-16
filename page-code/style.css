@@ -247,18 +247,21 @@ button{
         margin-top: 10rem;
     }
 
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .box, .square-text{
         width: 21.25rem;
     }
 
     .square-text{
         margin-top: 2rem;
-    }
-
-    .square-text{
         align-items: flex-start;
         font-size: 1.5rem;
     }
+
     /* write margins for everything*/
     header p, header button, .first-box ,.courses, footer p, footer button{
         margin-left: 2.5rem;
@@ -270,6 +273,8 @@ button{
         padding-right: 1rem;
     }
 }
+
+
 
 @media screen and (min-width: 1200px) {
     #mobile-img, #tablet-img{
@@ -304,7 +309,9 @@ button{
     .box{
         display: flex;
         flex-wrap: wrap;
+        align-items: flex-end;
     }
+ 
 
     /* Paddings for  each box*/
     .box a, .box p, .box div,.box h4{
