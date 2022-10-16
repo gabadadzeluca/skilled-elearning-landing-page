@@ -156,7 +156,7 @@ footer p{
 }
 
 .box div{
-    padding: 1.75rem;
+    /*padding: 1.75rem;*/
     background: var(--white);
     padding-top: 1rem;
     border-radius: 0.625rem;
@@ -164,6 +164,15 @@ footer p{
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 2rem;
+}
+
+/* Paddings for  each box*/
+.box a, .box p, .box div,.box h4{
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+.box a, .box p, .box div{
+    padding-bottom: 1rem;
 }
 
 .square-text{
@@ -255,9 +264,14 @@ button{
         margin-left: 2.5rem;
         margin-right: 2.5rem;
     }
+    /* Paddings for  each box*/
+    .box a, .box p, .box div,.box h4{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
     #mobile-img, #tablet-img{
         display: none;
     }
@@ -281,14 +295,25 @@ button{
 
     .box, .square-text{
         width: 21.875rem;
-        height: 20.125rem;
+        min-height: 20.125rem;
     }
     .square-text{
         align-items: flex-start;
         font-size: 1.5rem;
     }
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-
+    /* Paddings for  each box*/
+    .box a, .box p, .box div,.box h4{
+        padding-left: 1.5rem;
+        padding-right: 2em;
+    }
+    .box a, .box p, .box div{
+        padding-bottom: 1rem;
+    }
     /* write margins for everything*/
     header p, header button, .first-box ,.courses, footer p, footer button{
         margin-left: 11rem;
@@ -327,7 +352,6 @@ button{
     .box a{
         font-size: 1.125rem;
     }
-
     footer p{
         font-size: 2rem;
     }
