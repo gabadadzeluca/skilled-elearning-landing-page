@@ -21,6 +21,7 @@ body{
     font-size: 1rem;
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .container{
@@ -53,6 +54,9 @@ body{
 button{
     border: none;
 }
+button:hover{
+    cursor: pointer;
+}
 
 /* image style*/
 #mobile-img{
@@ -73,7 +77,7 @@ button{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-content: space-between;
+    justify-content: space-between;
     border-radius: 0.625rem;
     margin: 2.5rem 1rem;
     padding: 0 1.75rem 1rem 1.75rem;
@@ -105,9 +109,10 @@ button{
     display: flex;
     min-height: 7.5rem;
     justify-content: center;
-
     color: var(--white);
     font-weight: var(--very-bold);
+}
+.square-text p{
     font-size: 1.5rem;
 }
 
@@ -155,3 +160,111 @@ footer button{
     }
 }
 
+@media screen and (min-width: 720px) {
+    #mobile-img, #desktop-img{
+        display: none;
+    }
+    #tablet-img{
+        z-index: -1;
+        position: relative;
+        left: 10.5rem;
+        top: -10.5rem;
+        overflow: hidden;
+    }
+    .container{
+        display: flex;
+    }
+    .first-box{
+
+        min-width: 24.875rem;
+    }
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box{
+        width: 21.25rem;
+    }
+    .box p{
+        line-height: 1.75rem;
+    }
+    /* margins */
+    .container, header p, footer p, .content{
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    } 
+}
+
+@media screen and (min-width: 1000px) {
+    #mobile-img, #tablet-img{
+        display: none;
+    }
+    #desktop-img{
+        display: block;
+        z-index: -1;
+        position: relative;
+        left: 6rem;
+        top: -18rem;
+        overflow: hidden;
+    }
+
+    /* sizes */
+    .first-box{
+        display: flex;
+        justify-content: space-between;
+        max-height: 22.5rem;
+        min-width: 30.75rem;
+    }
+    .first-box h2{
+        font-size: 3.5rem;
+    }
+    .first-box p{
+        font-size: 1.125rem;
+    }
+
+    .box{
+        min-width: 21.875rem;
+        min-height: 20.125rem;
+        justify-content: space-around;
+    }
+    .box img{
+        margin-top: -3rem;
+        margin-left: 1rem;
+    }
+    .box p, .box a{
+        font-size: 1.125rem;
+    }
+    .box h4{
+        font-size: 1.5rem;
+    }
+
+    .square-text p{
+        font-size: 2rem;
+    }
+    .first-box button{
+        min-height: 3.9rem;
+        font-size: 1.125rem;
+    }
+
+    .box{
+        padding: 0.65rem;
+    }
+    .box p{
+        line-height: 1.75rem;
+    }
+    /* margins */
+    .container{
+        margin-left: 10.3rem;
+    }
+    .content{
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    header p, footer p{
+        margin-left: 10rem;
+    }
+    header button, footer button{
+        margin-right: 10rem;
+    }
+
+}
