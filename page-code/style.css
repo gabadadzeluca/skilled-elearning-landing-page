@@ -292,6 +292,7 @@ button{
         
     }
     .courses{
+        background-color: red;
         flex-wrap: wrap;
         margin-top: 20rem;
         margin-left: 10rem;
