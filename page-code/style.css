@@ -10,12 +10,11 @@
     --white: #FFFFFF;
     --orange-grad: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
     --purple-grad: linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%);
-
     --very-bold: 800;
     --bold: 700;
     --normal: 500;
-
-}
+    --button-grad: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+}  
 
 body{
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -24,11 +23,132 @@ body{
     margin: 0 auto;
 }
 
+.container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.first-box{
+    display: flex;
+    flex-direction:column;
+    align-content: space-between;
+}
+.first-box button{
+    width: 10.5rem;
+    height: 3.5rem;
+    border-radius: 2rem;
+    background: var(--orange-grad);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: var(--bold);
+}
+
+.first-box p{
+    color: var(--gray);
+    font-size: 1rem;
+}
+.first-box h2{
+    font-weight: var(--very-bold);
+    font-size: 2.5rem;
+}
+button{
+    border: none;
+}
+
+/* image style*/
+#mobile-img{
+    width: 100%;
+}
+
+.icon{
+    width: 56px;
+    height: 56px;
+}
 
 
+.content{
+    width: 100%;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+    border-radius: 0.625rem;
+    margin: 2.5rem 1rem;
+    padding: 0 1.75rem 1rem 1.75rem;
+}
+
+.box img{
+    margin-top: -2rem;
+}
+.box-content{
+    background: var(--white);
+}
+.box-content h4{
+    font-weight: var(--very-bold);
+    font-size: 1.25rem;
+}
+.box-content p{
+    font-size: 1rem;
+    font-weight: var(--normal);
+    color: var(--gray)
+}
+.box-content a{
+    color: var(--dark-pink);
+    font-weight: var(--bold);
+}
 
 
+.square-text{
+    background: var(--orange-grad);
+    display: flex;
+    min-height: 7.5rem;
+    justify-content: center;
 
+    color: var(--white);
+    font-weight: var(--very-bold);
+    font-size: 1.5rem;
+}
+
+header, footer{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p, footer p {
+    font-size: 1.75rem;
+    font-weight: var(--very-bold);
+    color: var(--dark-blue);
+
+    margin-left: 1rem;
+}
+
+header button, footer button{
+    font-size: 1rem;
+    border-radius: 1.75rem;
+    min-width: 8.75rem;
+    min-height: 3rem;
+    color: var(--white);
+    font-weight: var(--bold);
+
+    margin-right: 1rem;
+}
+
+footer{
+    background: var(--dark-blue);
+}
+footer p{
+    color: var(--white);
+}
+header button{
+    background: var(--dark-blue);
+}
+footer button{
+    background: var(--button-grad);
+}
 @media screen and (max-width:480px) {
     #tablet-img, #desktop-img{
         display: none;
