@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/gabadadzeluca/skilled-elearning-landing-page)
-- Live Site URL: [Live URL]()
+- Live Site URL: [Live URL](https://gabadadzeluca.github.io/skilled-elearning-landing-page/)
 
 ## My process
 
