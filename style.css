@@ -167,7 +167,7 @@ footer button{
     #tablet-img{
         z-index: -1;
         position: relative;
-        left: 10.5rem;
+        left: -2rem;
         top: -10.5rem;
         overflow: hidden;
     }
@@ -175,7 +175,6 @@ footer button{
         display: flex;
     }
     .first-box{
-
         min-width: 24.875rem;
     }
     .content{
@@ -195,7 +194,7 @@ footer button{
     } 
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1400px) {
     #mobile-img, #tablet-img{
         display: none;
     }
@@ -203,7 +202,7 @@ footer button{
         display: block;
         z-index: -1;
         position: relative;
-        left: 6rem;
+        left: 5rem;
         top: -18rem;
         overflow: hidden;
     }
@@ -254,11 +253,10 @@ footer button{
     }
     /* margins */
     .container{
-        margin-left: 10.3rem;
+        margin-left: 10rem;
     }
     .content{
         margin-left: 10rem;
-        margin-right: 10rem;
     }
     header p, footer p{
         margin-left: 10rem;
