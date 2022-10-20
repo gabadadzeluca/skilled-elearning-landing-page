@@ -156,10 +156,11 @@ header button{
 footer button{
     background: var(--button-grad);
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:720px) {
     #tablet-img, #desktop-img{
         display: none;
     }
+    
 }
 
 @media screen and (min-width: 720px) {
