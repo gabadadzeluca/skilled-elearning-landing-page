@@ -57,7 +57,9 @@ button{
 button:hover{
     cursor: pointer;
 }
-
+#tablet-img, #desktop-img{
+    display: none;
+}
 /* image style*/
 #mobile-img{
     width: 100%;
@@ -165,6 +167,7 @@ footer button{
         display: none;
     }
     #tablet-img{
+        display: block;
         z-index: -1;
         position: relative;
         left: -2rem;
